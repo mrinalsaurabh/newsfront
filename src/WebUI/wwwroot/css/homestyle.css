@@ -68,16 +68,34 @@
     background-color: black;
 }
 
+#user_menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 #user_menu li {
     border-top: 1px solid #e2e2e2;
-    padding: 8px 16px;
+    padding: 0px 0px;
 }
 
 #user_menu a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 35px;
     text-decoration: none;
-    color: #2b6dad;
 }
 
+.bullet{
+    float:left;
+    color:white;
+}
+
+#user_menu li a:hover {
+    background-color: #111;
+}
 .hidden {
     display: none;
 }
@@ -170,4 +188,28 @@
 .advelement{
     border:1px solid;
     height:150px;
+}
+.upvotebar {
+    height: 20px;
+    position: relative;
+    z-index: 100;
+    bottom: -55px;
+}
+.upvotetext {
+    float: left;
+    border-right: 1px solid;
+    padding-right: 5px;
+}
+.upvotebutton {
+    border: 1px solid;
+    width: 100px;
+    padding: 5px;
+    height:33px;
+}
+.upvotecount {
+    float: left;
+    padding-left: 5px;
+}
+.upvotebutton:hover{
+    cursor: pointer;
 }

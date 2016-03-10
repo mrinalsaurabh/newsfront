@@ -17,5 +17,10 @@ namespace WebUI.Controllers
         {
             return View();
         }
+
+        public IActionResult NewsItem(int itemid)
+        {
+            return View();
+        }
     }
 }

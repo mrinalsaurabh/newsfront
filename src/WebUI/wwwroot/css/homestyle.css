@@ -211,9 +211,10 @@
 }
 .upvotebutton {
     border: 1px solid;
-    width: 100px;
+    width: 110px;
     padding: 5px;
-    height:33px;
+    float: left;
+    height: 33px;
 }
 .upvotecount {
     float: left;
@@ -221,4 +222,9 @@
 }
 .upvotebutton:hover{
     cursor: pointer;
+}
+
+.newsacceptance {
+    float: right;
+    margin: 5px 5px 5px 5px;
 }

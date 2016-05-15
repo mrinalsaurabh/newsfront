@@ -1,0 +1,15 @@
+﻿<head>
+    <link href="~/lib/trix/dist/trix.css" rel="stylesheet" />
+    <script src="~/lib/trix/dist/trix.js"></script>
+</head>
+
+<body>
+    <form action="~/News/Save" method="post">
+        <input type="text" value="Your Heading Here"/>
+        <input type="text" value="Date" />
+        <input id="newscontent" value="Editor content goes here" type="hidden" name="content">
+        <trix-editor input="newscontent"></trix-editor>
+
+        <input type="submit" value="Save" />
+    </form>
+</body>

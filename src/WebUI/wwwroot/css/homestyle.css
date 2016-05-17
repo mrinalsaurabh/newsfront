@@ -37,12 +37,11 @@
     color: white;
     float: right;
     padding-right: 10px;
-    padding-top: 10px;
 }
 
 #profile_pic {
     float: right;
-    margin-top: 5px;
+    margin-top: -4px;
     margin-right: 13%;
 }
 
@@ -56,6 +55,14 @@
     height: 25px;
     background: black;
     border: 3px solid black;
+}
+
+.addnews{
+    margin: 0 0 -32px 0;
+    font-size: small;
+    color: wheat;
+    overflow: overlay;
+    width: 20%;
 }
 
 #user_menu {

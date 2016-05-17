@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNet.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
+using WebUI.Entities;
 using System.Threading.Tasks;
 
 namespace WebUI.Controllers
@@ -14,10 +14,12 @@ namespace WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Save(string Data)
+        public IActionResult Save(NewsItem newsItem)
         {
-            Console.WriteLine(Data);
-            return RedirectToAction("Index","Home","");
+            if (ModelState.IsValid)
+                return RedirectToAction("Index", "Home", "");
+            else
+                return View("NewNews");
         }
     }
 }

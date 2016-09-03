@@ -1,0 +1,12 @@
+{
+  "name": "WebUI",
+  "private": true,
+  "dependencies": {
+    "angular": "1.5.5",
+    "bootstrap": "~3.3.2",
+      "trix": "0.9.7"
+  },
+  "exportsOverride": {
+  }
+}
+

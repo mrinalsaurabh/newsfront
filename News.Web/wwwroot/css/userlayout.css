@@ -32,15 +32,40 @@
       .userstats .statbox .statboxtext .stattext {
         justify-content: center;
         display: flex; }
+  .userstats .statboxselected {
+    border-width: 2px;
+    font-weight: bolder;
+    margin-top: 18px;
+    margin-bottom: -2px; }
 
 .userpersonal {
+  float: right;
   text-align: right;
-  float: right; }
+  margin-left: -90px; }
   .userpersonal .userbuttons {
     border: 1px solid;
     display: flex;
     justify-content: center;
     margin: 5px;
     padding: 3px;
-    border-radius: 10px; }
+    border-radius: 10px;
+    width: 60%;
+    float: right; }
+  .userpersonal .userbuttonsselected {
+    font-weight: 600;
+    border: 2px solid; }
+
+.userspecific {
+  float: right; }
+  .userspecific .userpersonaldetails {
+    margin-left: 20px; }
+    .userspecific .userpersonaldetails .detailname {
+      border-top: 1px solid;
+      margin-top: 30px;
+      padding-top: 20px;
+      font-weight: 600;
+      font-family: serif;
+      font-size: x-large; }
+    .userspecific .userpersonaldetails li {
+      margin: 10px; }
 

@@ -3,6 +3,7 @@
     margin-top: 0px;
     margin-right: 10%;
 }
+
 .profilepic {
     height: 200px;
     width: 200px;
@@ -16,40 +17,79 @@
 
 .userstats {
     text-align: left;
+
     .statbox {
         border: 1px solid;
         border-radius: 25px;
         display: flex;
         align-items: center;
         margin: 20px 10px 0 10px;
+
         .glyphicon {
-            float:left;
-            }
+            float: left;
+        }
+
         .statboxtext {
-            float:right;
+            float: right;
             width: 100%;
             margin: 15px;
+
             .statnumber {
                 justify-content: center;
                 display: flex;
             }
-            .stattext{
+
+            .stattext {
                 justify-content: center;
                 display: flex;
             }
         }
     }
+
+    .statboxselected {
+        border-width: 2px;
+        font-weight: bolder;
+        margin-top: 18px;
+        margin-bottom: -2px;
+    }
 }
 
-.userpersonal{
-    text-align: right;
+.userpersonal {
     float:right;
-    .userbuttons{
+    text-align: right;
+    margin-left: -90px;
+    .userbuttons {
         border: 1px solid;
-        display:flex;
+        display: flex;
         justify-content: center;
         margin: 5px;
         padding: 3px;
         border-radius: 10px;
+        width: 60%;
+        float: right;
+    }
+    .userbuttonsselected {
+        font-weight: 600;
+        border: 2px solid;
+    }
+}
+
+.userspecific {
+    float: right;
+    .userpersonaldetails {
+        margin-left: 20px;
+
+        .detailname {
+            border-top: 1px solid;
+            margin-top: 30px;
+            padding-top: 20px;
+            font-weight: 600;
+            font-family: serif;
+            font-size: x-large;
+        }
+
+        li {
+            margin: 10px;
+        }
     }
 }

@@ -1,12 +1,11 @@
 {
-  "name": "WebUI",
+  "name": "webapplication",
   "private": true,
   "dependencies": {
-    "angular": "1.5.5",
-    "bootstrap": "~3.3.2",
-      "trix": "0.9.7"
-  },
-  "exportsOverride": {
+    "bootstrap": "3.3.6",
+    "jquery": "2.2.3",
+    "jquery-validation": "1.15.0",
+    "jquery-validation-unobtrusive": "3.2.6",
+    "trix": "0.9.7"
   }
 }
-

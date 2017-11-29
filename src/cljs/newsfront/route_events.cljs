@@ -16,5 +16,5 @@
     :current-url
     (fn [db [_ in-url]]
         (let [url (c-url/url in-url)]
-            (prn "url: " url)
-        (assoc db [:routes :navigated-page] url))))
+            (prn "url: " (assoc-in db [:routes :navigated-page] url))
+        (assoc-in db [:routes :navigated-page] url))))

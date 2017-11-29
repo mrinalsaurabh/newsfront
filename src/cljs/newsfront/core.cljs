@@ -2,23 +2,21 @@
   (:require [reagent.core :as reagent]
             [goog.events :as events]
             [newsfront.route-events]
+            [newsfront.route-subs]
             [goog.history.EventType :as EventType]
-            [re-frame.core :refer [dispatch]]
+            [re-frame.core :refer [dispatch subscribe]]
             [re-frame.core :as re-frame])
   (:import goog.history.Html5History                                                                                                                         
     goog.Uri))
 
 (enable-console-print!)
 
-(defn current-component [text]
-  [:div {} (str "url: " text)])
-
 (defn ^:export init []
   (let [url (.. js/window
                 -location
-                -href)]
-    (dispatch [:current-url url])
-    (reagent/render-component [current-component url] (.getElementById js/document "app"))))
+                -href)
+        page @(subscribe [:current-page])]
+    (reagent/render-component [page] (.getElementById js/document "app"))))
 
 (defn hook-browser-navigation! [] 
   (let [history (doto (Html5History.) 

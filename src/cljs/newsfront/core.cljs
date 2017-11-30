@@ -16,6 +16,7 @@
                 -location
                 -href)
         page @(subscribe [:current-page])]
+    (dispatch [:current-url])
     (reagent/render-component [page] (.getElementById js/document "app"))))
 
 (defn hook-browser-navigation! [] 

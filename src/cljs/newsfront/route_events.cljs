@@ -14,7 +14,8 @@
 
 (reg-event-db 
     :current-url
-    (fn [db [_ in-url]]
-        (let [url (c-url/url in-url)]
-            (prn "url: " (assoc-in db [:routes :navigated-page] url))
-        (assoc-in db [:routes :navigated-page] url))))
+    (fn [db _]
+        (let [url (c-url/url (.. js/window
+                                -location
+                                -href))]
+        (assoc-in db [:routes :navigated-url] url))))
